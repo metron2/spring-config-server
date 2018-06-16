@@ -6,35 +6,10 @@ spring:
           clone-on-start: true
           ignore-local-ssh-settings: true
           host-key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcwnYnAWYGbv3IxfDjrUthcnwuHQ83CO/cxBZplxrLrBN1UEmroy73uKBkrCEblmAESXKH7hx2ztGH7LNsCFtetS/c1nIe0N8iUpi4bW8pQ3awYvElM8GJe903r/+r0tKk95l9EOz1YadPAtGncOUINqK3JG5Q1kdPEZ2kKYp/Gu8dBp3bSv1ZTie/hfhWqp5AYQxA+J4FCjtEOpLl3xd6nHVrzVZ8wwNaD8aBvJf+WY2/fi7h0yVC0QtZ4lcXOnWb4Y/mMXLrj+bcLS36Ge4RGGAJJvWkZbTlFbfppCKCZUD1/WAWcGWy+XZwCJUOZIOeHP106/zIB+HTX/IDZlPL
-          private-key: |
-                        -----BEGIN RSA PRIVATE KEY-----
-                        MIIEpAIBAAKCAQEA3+zQVqMBMnTLVfkeunr5UMzHdc2lmqjF+Mk7ngJqmezNqLI+
-                        lHxSLkUFH8t/UDsN/Mtb9+t5+A8zyXmd7c5n4N/wXRX87bauiLux1kizUgzhmLf/
-                        CC0DWJGszu14dXO8wqSMZNCLVtUiALMC8iuQHsg74N6WwiWCoB2IdOA44pc8bsbC
-                        mQkzFFpPSiVX4mlkqtiHJtoKrrQo4udYvfakKpIgGi0hG0BKRWAvTI9FzC5WTgRT
-                        rWyk0z7iPIvoGtMsMA7jelTzgdnDT/EpltOi2ea+gwENelxpxH5rBJbw45icgtXf
-                        6OP80AuKSvEdfwllTge/PjrpyVv1fJPQpmkXoQIDAQABAoIBAEMcvMxaim9O5epc
-                        gcMuPC7lURqTigCyeLM5zK5s1vpPKMxYr7zdDdxkP0bqPLwVFvofEO9bGfEozUKj
-                        OpwdcrDJLUcY4fd0+xZr+r7YhzYeOjcFXmBa7VfMQVi7f5DkITzNCG7mufxKYKiI
-                        /mcKe2VeaePZkqGZkG7gqxcsZKA0WAOH89QOgz4aSOxhS3JPlZwTYHuJ1PBUK2Ch
-                        W3ckGLnuxTt1/4mFzkBr5ee94SL78Uj3lU9g0G9shjHNRa3MlElN5Fjvb66NHwSJ
-                        ckTI7qRTzPBJBiZjy8MRi9BeMrCTAulBhyUi97xfwHDXQcyF1UNCwNxQ/Cuz4cmU
-                        JL+0UAECgYEA9+erF6WKJrXg1nYWGW8RTHQp26S3zB7cXXp93V66N/iKkh2Xg4gQ
-                        YkyFVg+06BkZX0tLnrag8ehyJ++NIImXftz8eCacJcBsaz+zNBIXdlhoJoQb6KAz
-                        p32xBUT7nG9m6FsoaNKopxAlfU+fv0y9SeRzH4HDceyeoCaqEusPOeECgYEA5zyw
-                        OslXl7aImnISh9VJ96/aYFivDMXJTixsWRaEFNiMqVqDLGZpzZBMwV2LFgf+JzIm
-                        waVcrwe4m/snMIYFZ8EYwgow28DlNCyYr7WKyP5E/wJ+JjBwug3ocW1rK85WGXI/
-                        ltp1qR6AQAMq9qmv5I3Wx4akI9c2eLBdckwPFcECgYBGWpnkqRcu6zj2xCZ7a1jm
-                        cKUcb3+1zyBM6yFjPKnujnuNAhbovimgLAU/Kk/1+oGH2M+KKFw+qvASw1oy3LmA
-                        yGhiFNsFn7llKnvKEERWUrqkC6P7/dMK+pHNZAlgGQGEebJbJUW1u9BX4sv8N2QU
-                        31+IloQIBdXyr2Ze3hTBIQKBgQCfm7A4o4kmWwPnNx27TGmF4YfmQNBzDIJqxxby
-                        VyxMBzzwGF26Y+Zb0WJphdvfFR1EiMVfnHhhB/9RCwZ948QPXaVtKgOXa4nJfY7W
-                        mYR2P6v4KQxR59WnVro+sLvsvLuJTOa/hYL5fOghRw58u5uBMrYxeqoJYx9iJroZ
-                        jo5LAQKBgQCqVyePVZx0u5ApPsozghvfYUL/baLc1rJ396oL0UTwnmTzBXKrCWkF
-                        0MDX6dJgKWTdFnetPQhkY+WT1MDkFRr8nBBo+MbBwo1Oc4mOnFeayczMh2lwqlrX
-                        Hd0Yi08cRafWLAHS/Y7xvnuqtGD6dRC2BW2RkucSqfhHvIFHHVxJgw==
-                        -----END RSA PRIVATE KEY-----
-          uri: ssh://git@github.com:metron2/spring-config-server.git
+          private-key: | # Add the config service key below
+                        PEM FORMAT
+
+          uri: ssh://git@github.com:metron2/spring-config-server.git # Replace with your URI
   security:
     user:
       name: config
